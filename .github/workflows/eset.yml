@@ -32,7 +32,7 @@ on:
         - --key
         - --small-business-key
         - --advanced_key
-        default: --advanced_key
+        default: --small-business-key
       os:
         description: 'Operating System of runner'
         required: true
@@ -63,7 +63,7 @@ jobs:
           KEY_TYPE=${{ github.event.inputs.key_type }}
           BRANCH=${{ github.event.inputs.branch }}
 
-          git clone -b ${BRANCH} https://github.com/rzc0d3r/ESET-KeyGen.git
+          git clone -b ${BRANCH} https://github.com/nick25252525/ESET-KeyGen.git
           cd ESET-KeyGen
           
           # Setup env
@@ -100,7 +100,7 @@ jobs:
           MAIL=${{ github.event.inputs.mail }}
           KEY_TYPE=${{ github.event.inputs.key_type }}
 
-          git clone https://github.com/rzc0d3r/ESET-KeyGen.git
+          git clone https://github.com/nick25252525/ESET-KeyGen.git
           cd ESET-KeyGen
           
           # Setup env
@@ -136,7 +136,7 @@ jobs:
           $MAIL="${{ github.event.inputs.mail }}"
           $KEY_TYPE="${{ github.event.inputs.key_type }}"
 
-          git clone https://github.com/rzc0d3r/ESET-KeyGen.git
+          git clone https://github.com/nick25252525/ESET-KeyGen.git
           cd ESET-KeyGen
 
           # Setup dependencies
