@@ -57,13 +57,13 @@ EMAIL_API_CLASSES = {
 }
 
 args = {
-    'chrome': True,
-    'firefox': False,
+    'chrome': False,
+    'firefox': True,
     'edge': False,
 
-    'key': True,
+    'key': False,
     'small_business_key': False,
-    'advanced_key': False,
+    'advanced_key': True,
     'vpn_codes': False,
     'account': False,
     'protecthub_account': False,
